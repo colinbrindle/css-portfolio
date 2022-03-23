@@ -25,64 +25,85 @@
 
     <main>
         <!-- Banner image -->
-        <section class="bannerPic">
-            <!-- <img class="bannerPic" src="./assets/images/bgImage.png" alt="Banner image (this is a pic of EPCOT at Disney World I took)."> -->
+        <section class="bannerPic" title="Banner image made from a picture of EPCOT I took at Disney World">
+            
+            <!-- Banner thank you message -->
             <h3>thanks for stopping by!</h3>
+            
+            <!-- Banner image copyright -->
             <span>© Colin Brindle 2022</span>
         </section>
 
         <!-- About me section -->
         <section class="primaryContent">
+            <!-- Destination for navigation pane 'about' link -->
             <a name="about"></a>
 
             <h2>about me</h2>
-            
-            <!-- Image -->
-            <img class="selfPic" src="./assets/images/aboutImage.png" alt="An image of my face. You're not missing much if it doesn't load.">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>
-                Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Scelerisque eu ultrices vitae auctor eu. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit. Mi sit amet mauris commodo quis imperdiet. Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida hendrerit. Nibh nisl condimentum id venenatis a condimentum vitae sapien. Cras adipiscing enim eu turpis egestas pretium aenean pharetra magna. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci. Imperdiet proin fermentum leo vel orci porta non pulvinar. Sed libero enim sed faucibus turpis in eu. Eu feugiat pretium nibh ipsum consequat nisl. Mattis nunc sed blandit libero volutpat sed. Eu ultrices vitae auctor eu augue ut. Lacus viverra vitae congue eu consequat ac felis donec et. Semper quis lectus nulla at volutpat diam ut venenatis. Accumsan sit amet nulla facilisi. Ornare arcu dui vivamus arcu felis bibendum ut tristique.
-            </p>
+   
+            <!-- Self portrait -->
+
+            <!-- Paragraphs about me -->
+            <article class="aboutMe">
+                <img class="selfPic" src="./assets/images/aboutImage.png" alt="An image of my face. You're not missing much if it doesn't load.">
+
+                <p class="aboutContent">
+                    Hi, welcome to my portfolio page! As you can probably tell, it's still a work in progress. I'm currently enrolled in a coding boot camp, and will be updating this page as I hone my HTML, CSS, and JS skills.
+                    <br><br>
+                    Anywho, with that preamble out of the way, let me formally introduce myself.
+                    <br><br>
+                    Hello! My name is Colin Brindle. I'm a 24 year old ex-consultant looking to develop a new set of skills and break into the tech industry. (A dream of mine that I've waited too long to pursue!). I live in Atlanta, GA with my boyfriend, Mikey, and my wonderful cat, Katya Ravioli Brindle -- we call her Kat for short. You'll usually find me busy in the kitchen or glued to my couch playing Elden Ring in my free time. I'm also a big fan of the outdoors and love a good hike!
+                    <br><br>
+                    If you like what you see here, don't hesitate to reach out. You can scroll down (or press the "contact" button above) to find the best ways to reach me.
+                </p>
+            </article>
         </section>
 
         <!-- Portfolio section -->
         <section class="primaryContent">
+            <!-- Destination for navigation pane 'my work' link -->
             <a name="work"></a>
 
             <h2>my work</h2>
-            <article>
-                <h4>CSS Cheatsheet</h4>
-                <h6>[WIP] Quick and easy CSS tricks!</h6>
-            </article>
-            <article>
-                <h4>Katya Ravioli Brindle</h4>
-                <h6>An appreciation page for the most amazing cat ever</h6>
-            </article>
-            <article>
-                <h4>Code Refactoring</h4>
-                <h6>Code refactoring practice</h6>
-            </article>
-            <article>
-                <h4>project 4</h4>
-                <h6>p4 subheading</h6>
-            </article>
-            <article>
-                <h4>project 5</h4>
-                <h6>p5 subheading</h6>
-            </article>
+
+            <section class="portfolio">
+                <article class="item featured cheatsheet">
+                    <h4><a class="portText" href="https://colinbrindle.github.io/miniproject-unit-2/" target="_blank">CSS Cheatsheet</a></h4>
+                    <p class="portText">[WIP] Quick and easy CSS tricks!</p>
+                </article>
+
+                <div class="grid">
+                    <article class="item KRB">
+                        <h3><a class="portText" href="https://colinbrindle.github.io/miniproject-w1/" target="_blank">Katya Ravioli Brindle</a></h3>
+                        <p class="portText">An appreciation page for the most amazing cat ever</p>
+                    </article>
+                    <article class="item refactor">
+                        <h3><a class="portText" href="https://colinbrindle.github.io/homework-w1/" target="_blank">Code Refactoring</a></h3>
+                        <p class="portText">Code refactoring practice</p>
+                    </article>
+                    <article class="item pasta">
+                        <h3><a class="portText" href="#">Pasta Sauce</a></h3>
+                        <p class="portText">My favorite homemade pasta sauce recipe</p>
+                    </article>
+                    <article class="item coffee">
+                        <h3><a class="portText" href="#">CafFun</a></h3>
+                        <p class="portText">Have some fun while you fuel up for the day!</p>
+                    </article>
+                </div>            
+            </section>
         </section>
 
-        <!-- Contact links -->
-        <section class="primaryContent">
-            <h2>contact me</h2>
-            <a href="tel:+17204761982">(720) 476-1982</a>
-            <a href="mailto:hcolinbrindle@gmail.com">hcolinbrindle@gmail.com</a>
-            <a href="https://github.com/colinbrindle/">GitHub</a>
-            <a href="https://www.linkedin.com/in/colin-brindle/">LinkedIn</a>
-
+        <section class="primaryContent contactInfo">
+            <!-- Destination for navigation pane 'contact' link -->
             <a name="contact"></a>
+
+            <h2>contact me</h2>
+            <article>
+                <a href="tel:+17204761982">(720) 476-1982</a>
+                <a href="mailto:hcolinbrindle@gmail.com?subject=Your portfolio wowed me!" target="_blank">hcolinbrindle@gmail.com</a>
+                <a href="https://github.com/colinbrindle/" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/colin-brindle/" target="_blank">LinkedIn</a>
+            </article>
         </section>
     </main>
 </body>

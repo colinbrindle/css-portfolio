@@ -1,3 +1,5 @@
+/* UNIVERSAL SITE ELEMENTS BELOW */
+
 /* Setting up root level and html element formatting */
 :root{
     --bgHeader: #170027;
@@ -12,6 +14,10 @@ html {
     background: var(--bgBody);
 }
 
+body {
+    padding-bottom: 3em;
+}
+/* HEADER & NAV PANE CODE BELOW */
 
 /* Header and navigation pane formatting */
 header {
@@ -27,7 +33,8 @@ header {
 }
 
 header h1 {
-    padding: 15px 15px 15px 3em;
+    font-size: 3em;
+    padding: 15px 15px 15px 2em;
     background: var(--txtHeader);
     color: var(--bgHeader);
 }
@@ -48,7 +55,20 @@ nav a {
     border-bottom: 2px solid var(--txtHeader);
     padding-bottom: 2px;
     margin: 0 10px;
+    background-color: var(--bgHeader);
+    background-size: 0% 0%;
+    background-position: bottom;
 }
+
+/* Nav button animations */
+nav a:hover, nav a:focus {
+    color: var(--bgHeader);
+    background-color: var(--txtHeader);
+    background-size: 100% 100%;
+    transition: ease-in 0.3s;
+}
+
+/* MAIN CONTENT CODE BELOW */
 
 /* Main body content formatting */
 main {
@@ -57,47 +77,172 @@ main {
 
 /* Borders for primary content (e.g., about me, work, contact sections) */
 .primaryContent {
-    margin-bottom: 1em;
-    margin: 2em 7em;
+    margin: 2em 10em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
-section p {
-    padding-bottom: 1em;
-}
-
-section h2 {
-    font-size: 2em;
+.primaryContent h2 {
+    font-size: 4em;
     color: var(--txtHeader);
+    flex: 0 0 10%;
+    text-align: right;
+    border-right: 5px solid var(--txtHeader);
+    padding-right: 20px;
+    line-height: 1.3;
 }
 
 section article {
     padding: 1em 0;
 }
 
+/* About section formatting */
+.aboutMe {
+    flex: 0 0 80%;
+    display: flex;
+    align-items: center;
+}
+
+.aboutContent {
+    flex: 1;
+    padding: 10px;
+}
+
+section p {
+    padding-bottom: 1em;
+    line-height: 1.5;
+}
+
+.portfolio {
+    width: 80%;
+}
+
+.item {
+    height: 15em;
+    border: 5px solid var(--txtHeader);
+    margin: 1em;
+    padding: 1em;
+    color: var(--bgHeader);
+}
+
+.grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 17em;
+    column-gap: 2em;
+    row-gap: 1em;
+}
+
+.featured {
+    width: 77.5%;
+    height: 25em;
+}
+
+.portText {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--txtHeader);
+}
+
+/* Portfolio images */
+.cheatsheet {
+    background-image: url("../images/cheatsheet.png");
+}
+
+.KRB {
+    background-image: url("../images/KRB.png");
+}
+
+.refactor {
+    background-image: url("../images/refactor.png");
+}
+
+.pasta {
+    background-image: url("../images/pasta.png");
+}
+
+.coffee {
+    background-image: url("../images/coffee.png");
+}
+
+.cheatsheet, .KRB, .refactor, .pasta, .coffee {
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.5);
+}
+
+/* Contact section formatting */
+.contactInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin-right: 20%;
+}
+
+.contactInfo article a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0 2em;
+    display: inline-block;
+    justify-content: space-around;
+    color: var(--bgHeader);
+}
+
+/* nav a {
+    font-size: 150%;
+    text-decoration: none;
+    color: var(--txtHeader);
+    font-weight: bold;
+    padding: 0 0.5em;
+    border-bottom: 2px solid var(--txtHeader);
+    padding-bottom: 2px;
+    margin: 0 10px;
+    background-color: var(--bgHeader);
+    background-size: 0% 0%;
+    background-position: bottom;
+}
+
+
+nav a:hover, nav a:focus {
+    color: var(--bgHeader);
+    background-color: var(--txtHeader);
+    background-size: 100% 100%;
+    transition: ease-in 0.3s;
+} */
+/* 
+#confactInfo a:hover, nav a:focus {
+    color: var(--bgHeader);
+    background-color: var(--txtHeader);
+    background-size: 100% 100%;
+    transition: ease-in 0.3s;
+} */
+
+/* BANNER & IMAGE FORMATTING BELOW */
+
+/* Self portrait formatting */
 .selfPic {
     border-style: solid;
     border-width: 2px;
     border-radius: 100%;
     border-color: var(--bgHeader);
-    max-width: 25%;
+    max-width: 20%;
     max-height: auto;
-    margin: 1em 0;
+    margin: 2em;
     box-shadow: 3px 3px 5px rgb(160,160,160);
 }
 
+/* Formatting for banner image */
 .bannerPic {
     background-image: url("../images/bgImage.png");
     background-size: cover;
     height: 18em;
     position: relative;
-}
-
-.bannerPic span {
-    font-size: 75%;
-    color: var(--lightText);
-    position: absolute;
-    right: 1em;
-    bottom: 1em;
 }
 
 .bannerPic h3 {
@@ -108,4 +253,14 @@ section article {
     right: 0;
     bottom: 15%;
     font-style: italic;
+    font-size: 120%;
+}
+
+/* Formatting for image copyright message*/
+.bannerPic span {
+    font-size: 75%;
+    color: var(--lightText);
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
 }
