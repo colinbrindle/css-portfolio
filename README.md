@@ -1,6 +1,4 @@
-# homework-unit-2
-Unit 2 Advanced CSS: Project Portfolio Homework
-
+# Unit 2 Advanced CSS: Project Portfolio Homework
 
 ### Project Description
 The aim of this project was to utilize the skills we have learned so far in our coding boot camp to build a portfolio website. This project tested HTML and CSS concepts including flexbox, media queries, class/element selectors, etc.
