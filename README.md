@@ -15,6 +15,10 @@ Areas that I have had the most difficulty with and will work to fix:
     - **Portfolio Animations:** I would also like to add hover over animations to the grid cells.
 - **Media Queries:** Media queries need to be implemented to restructure the site for smaller screens and mobile devices. I have held off on implementing this for now due to difficulties with header alignment and the portfolio grid.
 
+### Links
+- Acccess my [portfolio site here](https://colinbrindle.github.io/homework-unit-2/)
+- Access this site's [GitHub repository here](https://github.com/colinbrindle/homework-unit-2)
+
 ### Site Screenshots
 ![Image of site header & about me](../homework-unit-2/assets/images/site1.png)
 
