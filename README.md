@@ -18,8 +18,8 @@ Areas that I have had the most difficulty with and will work to fix:
 - Access this site's [GitHub repository here](https://github.com/colinbrindle/homework-unit-2)
 
 ### Site Screenshots
-![Image of site header & about me](../homework-unit-2/assets/images/site1.png)
+![Image of site header & about me](/assets/images/site1.png)
 
-![Image of the portfolio grid](../homework-unit-2/assets/images/site2.png)
+![Image of the portfolio grid](/assets/images/site2.png)
 
-![Image of the contact section](../homework-unit-2/assets/images/site3.png)
+![Image of the contact section](/assets/images/site3.png)
