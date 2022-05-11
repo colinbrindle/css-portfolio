@@ -126,6 +126,7 @@ section p {
     margin: 1em;
     padding: 1em;
     color: var(--bgHeader);
+    background-size: cover;
 }
 
 .grid {
@@ -149,24 +150,24 @@ section p {
 }
 
 /* Portfolio images */
-.cheatsheet {
-    background-image: url("../images/cheatsheet.png");
-}
-
-.KRB {
-    background-image: url("../images/KRB.png");
-}
-
-.refactor {
-    background-image: url("../images/refactor.png");
-}
-
 .UNN {
     background-image: url("../images/unn.png");
 }
 
-.coffee {
-    background-image: url("../images/coffee.png");
+.thisiswar {
+    background-image: url("../images/thisiswar.png");
+}
+
+.readme {
+    background-image: url("../images/readme.png");
+}
+
+.drmossi {
+    background-image: url("../images/drmossii.png");
+}
+
+.ecommbackend {
+    background-color: url("../images/backend.png");
 }
 
 .cheatsheet, .KRB, .refactor, .pasta, .coffee {
